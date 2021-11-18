@@ -1,0 +1,7 @@
+#!groovy
+
+@Library("Infrastructure") _
+
+withInfraPipeline("civil") {
+    enableSlackNotifications('#civil_contact')
+}
