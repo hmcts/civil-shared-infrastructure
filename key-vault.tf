@@ -8,7 +8,7 @@ module "vault" {
   resource_group_name = azurerm_resource_group.rg.name
   product_group_name  = "DTS Civil"
   common_tags         = local.tags
-  create_managed_identity = true
+  create_managed_identity = false
 }
 
 output "vaultName" {
